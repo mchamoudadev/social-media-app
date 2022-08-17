@@ -2,7 +2,7 @@ const postReducer = (state, action) => {
 
     const { type, payload } = action;
     switch (type) {
-
+        //
         case "ADD_NEW_POST":
             const newPost = payload.posts;
             return { ...state, posts: [newPost, ...state.posts] };
